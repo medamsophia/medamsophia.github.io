@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,6 +53,16 @@
       border: 2px dashed #f06292;
       padding: 20px;
       border-radius: 15px;
+      cursor: pointer;
+    }
+    .service-details {
+      display: none;
+      margin-top: 15px;
+    }
+    .service img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
     }
     .gallery {
       display: grid;
@@ -93,6 +102,12 @@
       font-weight: bold;
     }
   </style>
+  <script>
+    function toggleDetails(id) {
+      var details = document.getElementById(id);
+      details.style.display = details.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -116,13 +131,48 @@
   <section id="services">
     <h2>Our Services</h2>
     <div class="services">
-      <div class="service">Princess Characters</div>
-      <div class="service">Mascots</div>
-      <div class="service">Superheroes</div>
-      <div class="service">Face Painting</div>
-      <div class="service">Balloon Twisting</div>
-      <div class="service">Party Games</div>
-      <div class="service">Picture Time</div>
+      <div class="service" onclick="toggleDetails('princess')">Princess Characters
+        <div id="princess" class="service-details">
+          <p>Price: $150/hr</p>
+          <img src="princess_sample.jpg" alt="Princess Service Photo">
+        </div>
+      </div>
+      <div class="service" onclick="toggleDetails('mascots')">Mascots
+        <div id="mascots" class="service-details">
+          <p>Price: $130/hr</p>
+          <img src="mascot_sample.jpg" alt="Mascot Service Photo">
+        </div>
+      </div>
+      <div class="service" onclick="toggleDetails('superheroes')">Superheroes
+        <div id="superheroes" class="service-details">
+          <p>Price: $150/hr</p>
+          <img src="superhero_sample.jpg" alt="Superhero Service Photo">
+        </div>
+      </div>
+      <div class="service" onclick="toggleDetails('facepainting')">Face Painting
+        <div id="facepainting" class="service-details">
+          <p>Price: $100/hr</p>
+          <img src="facepainting_sample.jpg" alt="Face Painting Service Photo">
+        </div>
+      </div>
+      <div class="service" onclick="toggleDetails('balloon')">Balloon Twisting
+        <div id="balloon" class="service-details">
+          <p>Price: $90/hr</p>
+          <img src="balloon_sample.jpg" alt="Balloon Twisting Photo">
+        </div>
+      </div>
+      <div class="service" onclick="toggleDetails('games')">Party Games
+        <div id="games" class="service-details">
+          <p>Price: $75/hr</p>
+          <img src="games_sample.jpg" alt="Games Activity Photo">
+        </div>
+      </div>
+      <div class="service" onclick="toggleDetails('pictures')">Picture Time
+        <div id="pictures" class="service-details">
+          <p>Included with character bookings!</p>
+          <img src="pictures_sample.jpg" alt="Picture Time Photo">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -162,3 +212,4 @@
   </footer>
 </body>
 </html>
+Updated index.html to include service details and images
