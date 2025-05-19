@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Smiles Entertainment</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom, #fce4ec, #e3f2fd);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffccf9;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 80px;
+      vertical-align: middle;
+    }
+    header h1 {
+      color: #ff69b4;
+      font-size: 3em;
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    nav {
+      text-align: center;
+      background-color: #ffeb3b;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #0277bd;
+    }
+    section {
+      padding: 30px;
+      text-align: center;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background-color: #fff;
+      border: 2px dashed #f06292;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px;
+      background-color: #f06292;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #90caf9;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Little Smiles Logo" />
+    <h1>Little Smiles Entertainment</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking">Booking</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Little Smiles Entertainment, we specialize in magical party experiences that children never forget. From princesses and superheroes to mascots and games, we bring joy, laughter, and smiles to every event!</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">Princess Characters</div>
+      <div class="service">Mascots</div>
+      <div class="service">Superheroes</div>
+      <div class="service">Face Painting</div>
+      <div class="service">Balloon Twisting</div>
+      <div class="service">Party Games</div>
+      <div class="service">Picture Time</div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="hello kitty.jpg" alt="Hello Kitty Party" />
+      <img src="pooh.jpg" alt="Pooh Mascot" />
+      <img src="stich.jpg" alt="Stitch Mascot" />
+      <img src="mickey 4.jpg" alt="Group Party 1" />
+      <img src="mickey 3.jpg" alt="Group Party 2" />
+      <img src="mickey 2.jpg" alt="Group Party 3" />
+      <img src="mickey.jpg" alt="Group Party 4" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📱 Call or Text: 323-636-7957</p>
+    <p>📸 Instagram: <a href="https://instagram.com/littlesmilesla" target="_blank">@littlesmilesla</a></p>
+  </section>
+
+  <section id="booking">
+    <h2>Book Your Event</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="text" placeholder="Event Date" required />
+      <textarea rows="4" placeholder="Services Needed (e.g., Princess, Balloon Twisting)"></textarea>
+      <button type="submit">Submit Booking Request</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Little Smiles Entertainment | Designed with love and laughter 💖
+  </footer>
+</body>
+</html>
